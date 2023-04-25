@@ -1,0 +1,37 @@
+:root {
+  --backgroundColor: #1F1C1F;
+  --text: #DDD7D3;
+  --verde: #9D9B43;
+  --azul: #167865;
+  --borderDepo: #FE7100;
+  --planText: #969696;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--backgroundColor);
+}
+
+h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 6rem;
+}
+
+h2{
+  font-family: 'Miriam Libre', sans-serif;
+}
+
+p {
+  font-family: 'Maven Pro', sans-serif;
+}
