@@ -15,9 +15,11 @@
 
 html {
   font-size: 62.5%;
+
 }
 
 body {
+
   font-family: 'Maven Pro', sans-serif;
   font-size: 1.6rem;
   background-color: var(--backgroundColor);
@@ -34,4 +36,77 @@ h2{
 
 p {
   font-family: 'Maven Pro', sans-serif;
+}
+
+nav{
+  /* width: 100vw; */
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: var(--azul);
+  border-bottom: var(--verde) solid 5px;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--text);
+  margin-right: 3rem;
+  font-size: 2.25rem;
+  font-weight: bold;  
+}
+
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  bottom: -0.4rem;
+  left: 25%;
+  width: 0%;
+  height: 0.2rem;
+  background-color: var(--borderDepo);
+  
+  transition: all 200ms ease-in-out;
+}
+
+nav ul li a:hover::after{
+  left: 0;
+  width: 100%;
+}
+
+.center-nav li a{
+  position: relative;
+}
+
+.center-nav {
+  /* position: relative; */
+  list-style-type: none;
+  display: flex;
+}
+
+.login::after{
+  content: '';
+  position: absolute;
+  bottom: -0.4rem;
+  left: 25%;
+  width: 0%;
+  height: 0.2rem;
+  background-color: var(--borderDepo);
+  transition: all 200ms ease-in-out;
+}
+.login:hover:after{
+  left: 0;
+  width: 100%;}
+.logo-nav{
+  margin-left: 4rem;
+  width: 6rem;
+  height: auto;
+  margin-top: 0.7rem;
+}
+
+.login{
+  position: relative;
+  margin-right: 4rem;
 }
