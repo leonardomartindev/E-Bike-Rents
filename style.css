@@ -23,6 +23,7 @@ body {
   font-family: 'Maven Pro', sans-serif;
   font-size: 1.6rem;
   background-color: var(--backgroundColor);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -38,9 +39,15 @@ p {
   font-family: 'Maven Pro', sans-serif;
 }
 
+header{
+  height: 100vh;
+  width: 100vw;
+}
+
 nav{
   /* width: 100vw; */
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   background-color: var(--azul);
@@ -49,6 +56,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 2;
 }
 
 nav a{
@@ -67,7 +75,6 @@ nav ul li a::after{
   width: 0%;
   height: 0.2rem;
   background-color: var(--borderDepo);
-  
   transition: all 200ms ease-in-out;
 }
 
@@ -98,15 +105,92 @@ nav ul li a:hover::after{
 }
 .login:hover:after{
   left: 0;
-  width: 100%;}
+  width: 100%;
+}
+
 .logo-nav{
   margin-left: 4rem;
   width: 6rem;
   height: auto;
   margin-top: 0.7rem;
+  transition: all 400ms ease-in-out;
+}
+
+.logo-nav:hover{
+  margin-left: 6rem;
+  margin-right: -2rem;
 }
 
 .login{
   position: relative;
   margin-right: 4rem;
+}
+
+.left-content{
+  margin-top: 9rem;
+  margin-left: 5rem;
+}
+
+.main-h1{
+  /* margin-top: 14rem; */
+  margin-bottom: 2rem;
+  color: var(--verde);
+  font-size: 8rem;
+}
+
+.highlight{
+  color: var(--azul);
+}
+
+.h2-main{
+  font-size: 2.8rem;
+  color: var(--text);
+  margin-bottom: 4rem;
+}
+
+.p-main{
+  color: var(--text);
+  margin-bottom: 4rem;
+  font-size: 2.3rem;
+}
+
+.btn-plan{
+  background-color: var(--verde);
+  color: var(--backgroundColor);
+  padding: 2rem;
+  font-family: 'Miriam Libre', sans-serif;
+  border: none;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.home-container{
+  display: flex;
+  margin-top: 8rem;
+  justify-content: space-between;
+}
+
+.bike-nobackground{
+  transform: matrix(-0.93, -0.37, -0.37, 0.93, 0, 0);
+  /* transform: scaleX(-1); */
+  width: 60rem;
+  height: auto;
+  top: 4rem;
+  right: -2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.circle::after{
+  content: '';
+  width: 50rem;
+  height: 50rem;
+  right: 4rem;
+  background-color: var(--azul);
+  position: absolute;
+  border-radius: 50%;
+  top: 16rem;
 }
