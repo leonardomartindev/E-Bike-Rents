@@ -590,3 +590,58 @@
     margin-top: 230rem;
   }
 }
+
+@media (max-width: 394px) {
+  html{
+    font-size: 45%;
+  }
+  nav ul li img{
+    margin-left: -1rem;
+  }
+  .center-navicon{
+    visibility: hidden;
+  }
+
+  .header-content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .header-content p{
+    width: 90vw;
+    margin-left: 2.5rem;  
+}
+  .container-main{
+    margin-top: 7rem;
+    margin-left: 1rem;
+  }
+  .container-main p{
+    font-size: 2.5rem;
+    width: 90vw;
+  }
+  .bike-main{
+    margin-left: 18rem;
+  }
+  .plan{
+    margin-top: 4rem;
+  }
+  .top-h2-plan{
+    font-size: 3rem;
+    width: 90vw;
+  }
+  .top-p-plan{
+    width: 90vw;
+  }
+  .card{
+    width: 80vw;
+  }
+  .depoimentos{
+    margin-top: 140rem;
+  }
+  .card-depo{
+    width: 80vw;
+  }
+  .container-footer{
+    margin-top: -40rem;
+  }
+}
