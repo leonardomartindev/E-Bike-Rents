@@ -80,6 +80,8 @@
 
   width: 100vw;
   height: 100vh;
+    max-height: 935px;
+
   color: var(--text);
   padding-top: 7.35rem;
   display: flex;
@@ -135,12 +137,13 @@
 }
 
 .container-main{
+  
   width: 100vw;
   height: 100vh;
+  max-height: 935px;
   display: flex;
   color: var(--text);
   justify-content: space-around;
-  /* margin: 0 7rem 0 7rem; */
   flex-wrap: wrap;
 }
 
@@ -170,6 +173,8 @@
 }
 
 .plan{
+  max-height: 935px;
+
   width: 100vw;
   height: 100vh;
   color: var(--text);
@@ -299,6 +304,8 @@
   width: 100vw;
   height: 100vh;
   gap: 1.5rem;
+  max-height: 935px;
+
 }
 
 .top-h2-depo{
@@ -371,18 +378,6 @@
   background-color: #bbb959;
 }
 
-/* footer{
-  background-color: var(--azul);
-  margin-top: 55vh;
-  width: 100vw;
-  height: auto;
-  display: flex;
-  color: var(--text);
-  padding-bottom: 12rem;
-  justify-content: space-between;
-  flex-wrap: wrap;
-} */
-
 .right-container{
   /* margin-right: 18rem; */
   display: flex;
@@ -391,10 +386,6 @@
   flex-wrap: wrap;
   /* max-width: 630px; */
 }
-
-/* .left-container{
-  margin-left: 7rem;
-} */
 
 .logo-footer{
   order: 2;
@@ -425,7 +416,7 @@
   width: 100vw;
   justify-content: space-around;
   color: var(--text);
-  margin-top: 30rem;
+  margin-top: 20rem;
   height: auto;
   padding-bottom: 10rem;
   flex-wrap: wrap;
