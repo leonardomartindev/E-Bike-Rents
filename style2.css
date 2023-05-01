@@ -43,7 +43,7 @@
     /* height: auto; */
     font-size: 2rem;
     color: var(--text);
-    width: 100vw;
+    width: 100%;   
     background-color: var(--azul);
     padding: 0.5rem 0 0.5rem 0;
     border-bottom: 5px solid var(--verde);
@@ -139,8 +139,8 @@
   height: 100vh;
   display: flex;
   color: var(--text);
-  justify-content: space-between;
-  margin: 0 7rem 0 7rem;
+  justify-content: space-around;
+  /* margin: 0 7rem 0 7rem; */
   flex-wrap: wrap;
 }
 
@@ -160,10 +160,12 @@
 }
 
 .bike-main{
-  width: 50rem;
-  height: 48rem;
+  /* width: 50rem; */
+  /* height: 48rem; */
+  width: 60rem;
+  height: 60rem;
   border-radius: 50%;
-  margin-right: 20rem;
+  /* margin-right: 20rem; */
   border: solid 1px var(--text);
 }
 
@@ -173,6 +175,7 @@
   color: var(--text);
   display: flex;
   align-items: center;  
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -381,16 +384,17 @@
 } */
 
 .right-container{
-  margin-right: 18rem;
+  /* margin-right: 18rem; */
   display: flex;
   gap: 6rem;
   margin-top: 15rem;
   flex-wrap: wrap;
+  /* max-width: 630px; */
 }
 
-.left-container{
+/* .left-container{
   margin-left: 7rem;
-}
+} */
 
 .logo-footer{
   order: 2;
@@ -419,9 +423,8 @@
   background-color: var(--azul);
   display: flex;
   width: 100vw;
-  justify-content: space-between;
+  justify-content: space-around;
   color: var(--text);
-  height: 66vh;
   margin-top: 30rem;
   height: auto;
   padding-bottom: 10rem;
@@ -431,6 +434,8 @@
 .right-container div h2{
   margin-bottom: 1rem;
 }
+
+
 
 .right-container div p{
   margin-bottom: 0.25rem;
@@ -451,7 +456,7 @@
     gap: 10rem;
   }
   .plan{
-    margin-top: 35%;
+    margin-top: 65%;
   }
   footer{
     margin-top: 35rem;
@@ -490,7 +495,7 @@
   }
 
   .plan{
-    margin-top: 50rem;
+    margin-top: 70%;
   }
 
 }
@@ -502,7 +507,11 @@
     padding-left: 4rem;
   }
 
-  
+  @media (max-width: 911px) {
+    .plan{
+      margin-top: 80%;
+    }
+  }
 
   .h2-footer{
     visibility: hidden;
@@ -537,12 +546,16 @@
   }
 
   .depoimentos{
-    margin-top: 190rem;
-    margin-bottom: 160rem;
+    margin-top: 100rem;
+    margin-bottom: -20rem;
   }
   .card-depo{
     width: 50vw;
 
+  }
+
+  .plan{
+    margin-top: 130%;
   }
   .container-depos{
     flex-direction: column;
@@ -554,23 +567,75 @@
   .container-footer{
     margin-top: 170rem;
   }
+
+  .plan{
+    margin-top: 150%;
+  }
 }
 
-@media (max-width: 596px) {
+@media (max-width: 745px){
+
+  .plan{
+    margin-top: 160%;
+  }
+  .nav-links{
+    max-width: 746px;
+  }
+
+  .center-navicon{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 728px) {
   .container-footer{
-    margin-top: 180rem;
+    margin-top: 190rem;
+  }
+
+  .plan{
+    margin-top: 180%;
+  }
+
+}
+
+@media (max-width: 630px) {
+  .plan{
+    margin-top: 200%;
+  }
+
+}
+
+
+@media (max-width: 596px) {
+  html{
+    font-size: 50%;
+  }
+  .depoimentos{
+    margin-top: 170%;
+  }
+  .container-footer{
+    margin-top: 200rem;
   }
 }
 
 @media (max-width: 537px) {
+  
   .container-footer{
     margin-top: 190rem;
+  }
+  html{
+    font-size: 45%;
   }
 }
 
 @media (max-width: 510px) {
+
+  html{
+    font-size: 40%;
+  }
+
   .container-footer{
-    margin-top: 200rem;
+    margin-top: 170rem;
   }
 }
 
@@ -578,6 +643,7 @@
   .container-footer{
     margin-top: 210rem;
   }
+
 }
 
 @media (max-width: 438px) {
@@ -585,13 +651,9 @@
     margin-top: 220rem;
   }
 }
-@media (max-width: 428px) {
-  .container-footer{
-    margin-top: 230rem;
-  }
-}
 
-@media (max-width: 394px) {
+
+@media (max-width: 400px) {
   html{
     font-size: 45%;
   }
@@ -644,4 +706,35 @@
   .container-footer{
     margin-top: -40rem;
   }
+}
+
+@media (max-width: 400px) {
+  html{
+    font-size: 30%;
+  }
+  nav{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .left-side-header{
+    align-items: center;
+    margin: 0; 
+    padding: 0;
+ }
+ 
+ .bike-main{
+  width: 45rem;
+  height: 45rem;
+  margin: 0 0 123rem 0;
+}
+.plan{
+  margin-top: 35rem;
+  margin-bottom: -70rem;
+}
+
+.container-footer{
+  margin-top: 115rem;
+}
+
 }
