@@ -212,6 +212,15 @@
   width: 30vw;
   gap: 3rem;
 }
+.anual-border {
+  border-width: 3px;
+  border-style: solid;
+  border-image-source: linear-gradient(152.22deg, #9D9B43 1%, #1F1C1F 99%);
+  border-image-slice: 1;
+  border-image-width: 3px;
+}
+
+
 
 .p-price{
   width: 80%;
