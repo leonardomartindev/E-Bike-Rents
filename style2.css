@@ -710,10 +710,9 @@
 
 @media (max-width: 400px) {
   html{
-    font-size: 30%;
+    font-size: 35%;
   }
   nav{
-    padding: 0;
     margin: 0;
     width: 100%;
   }
@@ -726,15 +725,22 @@
  .bike-main{
   width: 45rem;
   height: 45rem;
-  margin: 0 0 123rem 0;
+  margin: 0 0 193rem 0;
 }
 .plan{
-  margin-top: 35rem;
+  margin-top: 55rem;
   margin-bottom: -70rem;
 }
 
 .container-footer{
   margin-top: 115rem;
 }
+
+}
+
+@media (max-width: 350px) {
+  html{
+    font-size: 30%;
+  }
 
 }
